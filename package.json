@@ -1,0 +1,47 @@
+{
+  "name": "cmd-explain",
+  "version": "0.1.0",
+  "description": "Explains CLI commands in one sentence. MCP server for AI coding agents.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "cmd-explain": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zmwaiworld/cmd-explain.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "vitest --run"
+  },
+  "keywords": [
+    "mcp",
+    "cli",
+    "command",
+    "explain",
+    "terminal",
+    "shell",
+    "ai",
+    "coding-agent"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}

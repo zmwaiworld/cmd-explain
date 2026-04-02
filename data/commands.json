@@ -1,0 +1,1874 @@
+{
+  "ls": {
+    "description": "List directory contents",
+    "flags": {
+      "-l": "long format",
+      "-a": "include hidden files",
+      "-h": "human-readable sizes",
+      "-R": "recursive",
+      "-t": "sort by modification time"
+    }
+  },
+  "cd": {
+    "description": "Change the current working directory"
+  },
+  "pwd": {
+    "description": "Print the current working directory path"
+  },
+  "cat": {
+    "description": "Print file contents to stdout",
+    "flags": {
+      "-n": "number all lines"
+    }
+  },
+  "echo": {
+    "description": "Print text to stdout",
+    "flags": {
+      "-n": "no trailing newline",
+      "-e": "interpret escape sequences"
+    }
+  },
+  "cp": {
+    "description": "Copy files or directories",
+    "flags": {
+      "-r": "recursive",
+      "-i": "prompt before overwrite"
+    }
+  },
+  "mv": {
+    "description": "Move or rename files and directories",
+    "flags": {
+      "-i": "prompt before overwrite",
+      "-f": "force"
+    }
+  },
+  "rm": {
+    "description": "Remove files or directories",
+    "flags": {
+      "-r": "recursive",
+      "-f": "force without confirmation"
+    }
+  },
+  "mkdir": {
+    "description": "Create directories",
+    "flags": {
+      "-p": "create parent directories as needed"
+    }
+  },
+  "rmdir": {
+    "description": "Remove empty directories"
+  },
+  "touch": {
+    "description": "Create an empty file or update its timestamp"
+  },
+  "chmod": {
+    "description": "Change file permissions",
+    "flags": {
+      "-R": "recursive"
+    }
+  },
+  "chown": {
+    "description": "Change file owner and group",
+    "flags": {
+      "-R": "recursive"
+    }
+  },
+  "grep": {
+    "description": "Search for text patterns in files",
+    "flags": {
+      "-r": "recursive",
+      "-i": "case-insensitive",
+      "-n": "show line numbers",
+      "-l": "list matching files only",
+      "-v": "invert match",
+      "-E": "extended regex"
+    }
+  },
+  "find": {
+    "description": "Search for files in a directory tree",
+    "flags": {
+      "-name": "match by filename",
+      "-type": "match by type",
+      "-exec": "run command on matches",
+      "-delete": "delete matches"
+    }
+  },
+  "sed": {
+    "description": "Stream editor for text transformation",
+    "flags": {
+      "-i": "edit files in place"
+    }
+  },
+  "awk": {
+    "description": "Pattern scanning and text processing language"
+  },
+  "sort": {
+    "description": "Sort lines of text",
+    "flags": {
+      "-r": "reverse",
+      "-n": "numeric sort",
+      "-u": "unique only"
+    }
+  },
+  "uniq": {
+    "description": "Filter adjacent duplicate lines",
+    "flags": {
+      "-c": "prefix with count"
+    }
+  },
+  "wc": {
+    "description": "Count lines, words, and bytes",
+    "flags": {
+      "-l": "lines only",
+      "-w": "words only"
+    }
+  },
+  "head": {
+    "description": "Print the first lines of a file",
+    "flags": {
+      "-n": "number of lines"
+    }
+  },
+  "tail": {
+    "description": "Print the last lines of a file",
+    "flags": {
+      "-n": "number of lines",
+      "-f": "follow new output"
+    }
+  },
+  "tar": {
+    "description": "Archive and compress files",
+    "flags": {
+      "-c": "create",
+      "-x": "extract",
+      "-z": "gzip",
+      "-v": "verbose",
+      "-f": "filename"
+    }
+  },
+  "less": {
+    "description": "View file contents with scrolling"
+  },
+  "whoami": {
+    "description": "Print the current username"
+  },
+  "uname": {
+    "description": "Print system information",
+    "flags": {
+      "-a": "all info"
+    }
+  },
+  "diff": {
+    "description": "Compare files line by line",
+    "flags": {
+      "-u": "unified format"
+    }
+  },
+  "patch": {
+    "description": "Apply a diff/patch file to source code"
+  },
+  "xargs": {
+    "description": "Build and execute commands from stdin"
+  },
+  "tee": {
+    "description": "Read stdin and write to both stdout and files",
+    "flags": {
+      "-a": "append"
+    }
+  },
+  "ln": {
+    "description": "Create links between files",
+    "flags": {
+      "-s": "symbolic link"
+    }
+  },
+  "which": {
+    "description": "Show the full path of a command"
+  },
+  "env": {
+    "description": "Print environment variables or run a command with modified environment"
+  },
+  "curl": {
+    "description": "Transfer data from or to a URL",
+    "flags": {
+      "-s": "silent",
+      "-o": "output file",
+      "-L": "follow redirects",
+      "-X": "HTTP method",
+      "-H": "header",
+      "-d": "POST data",
+      "-I": "headers only",
+      "-k": "allow insecure SSL"
+    }
+  },
+  "wget": {
+    "description": "Download files from the web",
+    "flags": {
+      "-O": "output filename",
+      "-q": "quiet"
+    }
+  },
+  "ssh": {
+    "description": "Open a secure shell connection to a remote host",
+    "flags": {
+      "-i": "identity file",
+      "-p": "port",
+      "-L": "local port forwarding",
+      "-N": "tunnel only"
+    }
+  },
+  "scp": {
+    "description": "Securely copy files between hosts over SSH",
+    "flags": {
+      "-r": "recursive"
+    }
+  },
+  "rsync": {
+    "description": "Sync files between locations with delta transfer",
+    "flags": {
+      "-a": "archive mode",
+      "-v": "verbose",
+      "-z": "compress",
+      "--delete": "delete extraneous files"
+    }
+  },
+  "ping": {
+    "description": "Test network connectivity to a host",
+    "flags": {
+      "-c": "count"
+    }
+  },
+  "dig": {
+    "description": "DNS lookup utility"
+  },
+  "nslookup": {
+    "description": "Query DNS name servers"
+  },
+  "nc": {
+    "description": "Netcat — read/write data across network connections"
+  },
+  "lsof": {
+    "description": "List open files and the processes using them",
+    "flags": {
+      "-i": "network connections"
+    }
+  },
+  "kill": {
+    "description": "Send a signal to a process",
+    "flags": {
+      "-9": "force kill (SIGKILL)"
+    }
+  },
+  "ps": {
+    "description": "List running processes",
+    "flags": {
+      "-e": "all processes",
+      "-f": "full format"
+    }
+  },
+  "top": {
+    "description": "Display real-time system resource usage and processes"
+  },
+  "htop": {
+    "description": "Interactive process viewer"
+  },
+  "df": {
+    "description": "Show disk space usage",
+    "flags": {
+      "-h": "human-readable"
+    }
+  },
+  "du": {
+    "description": "Estimate file and directory disk usage",
+    "flags": {
+      "-h": "human-readable",
+      "-s": "summary only"
+    }
+  },
+  "free": {
+    "description": "Display memory usage",
+    "flags": {
+      "-h": "human-readable"
+    }
+  },
+  "uptime": {
+    "description": "Show how long the system has been running"
+  },
+  "jq": {
+    "description": "Command-line JSON processor",
+    "flags": {
+      "-r": "raw output",
+      "-c": "compact"
+    }
+  },
+  "base64": {
+    "description": "Encode or decode base64 data",
+    "flags": {
+      "-d": "decode"
+    }
+  },
+  "openssl": {
+    "description": "SSL/TLS toolkit for certificates and encryption"
+  },
+  "zip": {
+    "description": "Create compressed zip archives",
+    "flags": {
+      "-r": "recursive"
+    }
+  },
+  "unzip": {
+    "description": "Extract files from a zip archive"
+  },
+  "gzip": {
+    "description": "Compress files using gzip",
+    "flags": {
+      "-d": "decompress",
+      "-k": "keep original"
+    }
+  },
+  "tree": {
+    "description": "Display directory structure as a tree",
+    "flags": {
+      "-L": "max depth"
+    }
+  },
+  "rg": {
+    "description": "ripgrep — fast recursive text search",
+    "flags": {
+      "-i": "case-insensitive",
+      "-l": "list files only"
+    }
+  },
+  "fd": {
+    "description": "Fast and user-friendly alternative to find"
+  },
+  "bat": {
+    "description": "Cat clone with syntax highlighting and git integration"
+  },
+  "fzf": {
+    "description": "Fuzzy finder for files, history, and more"
+  },
+  "ag": {
+    "description": "The Silver Searcher — fast code search tool"
+  },
+  "tmux": {
+    "description": "Terminal multiplexer — manage multiple terminal sessions"
+  },
+  "git": {
+    "description": "Distributed version control system",
+    "subcommands": {
+      "init": {
+        "description": "Create a new git repository"
+      },
+      "clone": {
+        "description": "Clone a remote repository to local"
+      },
+      "add": {
+        "description": "Stage changes for the next commit",
+        "flags": {
+          "-A": "stage all changes",
+          "-p": "interactively select hunks"
+        }
+      },
+      "commit": {
+        "description": "Record staged changes as a new commit",
+        "flags": {
+          "-m": "commit message",
+          "-a": "auto-stage tracked files",
+          "--amend": "modify the last commit"
+        }
+      },
+      "push": {
+        "description": "Upload local commits to a remote",
+        "flags": {
+          "-f": "force push",
+          "--force-with-lease": "safe force push",
+          "-u": "set upstream"
+        }
+      },
+      "pull": {
+        "description": "Fetch and merge changes from a remote",
+        "flags": {
+          "--rebase": "rebase instead of merge"
+        }
+      },
+      "fetch": {
+        "description": "Download objects and refs from a remote",
+        "flags": {
+          "--all": "all remotes",
+          "--prune": "remove stale refs"
+        }
+      },
+      "checkout": {
+        "description": "Switch branches or restore files",
+        "flags": {
+          "-b": "create and switch to new branch"
+        }
+      },
+      "switch": {
+        "description": "Switch to a different branch",
+        "flags": {
+          "-c": "create new branch"
+        }
+      },
+      "branch": {
+        "description": "List, create, or delete branches",
+        "flags": {
+          "-d": "delete",
+          "-D": "force delete",
+          "-a": "list all"
+        }
+      },
+      "merge": {
+        "description": "Merge another branch into the current branch",
+        "flags": {
+          "--no-ff": "create merge commit",
+          "--squash": "squash commits"
+        }
+      },
+      "rebase": {
+        "description": "Reapply commits on top of another base",
+        "flags": {
+          "-i": "interactive mode",
+          "--continue": "continue after conflicts",
+          "--abort": "cancel rebase"
+        }
+      },
+      "status": {
+        "description": "Show the working tree status"
+      },
+      "log": {
+        "description": "Show commit history",
+        "flags": {
+          "--oneline": "compact format",
+          "--graph": "branch graph"
+        }
+      },
+      "diff": {
+        "description": "Show changes between commits or working tree",
+        "flags": {
+          "--staged": "staged changes",
+          "--stat": "summary"
+        }
+      },
+      "show": {
+        "description": "Show details of a commit or object"
+      },
+      "stash": {
+        "description": "Temporarily save uncommitted changes"
+      },
+      "reset": {
+        "description": "Reset current HEAD to a specified state",
+        "flags": {
+          "--hard": "discard all changes",
+          "--soft": "keep staged",
+          "--mixed": "keep unstaged"
+        }
+      },
+      "revert": {
+        "description": "Create a new commit that undoes a previous commit"
+      },
+      "cherry-pick": {
+        "description": "Apply a specific commit from another branch"
+      },
+      "tag": {
+        "description": "Create, list, or delete tags",
+        "flags": {
+          "-a": "annotated tag",
+          "-d": "delete"
+        }
+      },
+      "remote": {
+        "description": "Manage remote repository connections"
+      },
+      "clean": {
+        "description": "Remove untracked files from working tree",
+        "flags": {
+          "-f": "force",
+          "-d": "include directories",
+          "-n": "dry run"
+        }
+      },
+      "blame": {
+        "description": "Show who last modified each line of a file"
+      },
+      "bisect": {
+        "description": "Binary search to find the commit that introduced a bug"
+      },
+      "worktree": {
+        "description": "Manage multiple working trees"
+      }
+    }
+  },
+  "docker": {
+    "description": "Container platform for building and running applications",
+    "subcommands": {
+      "build": {
+        "description": "Build a Docker image from a Dockerfile",
+        "flags": {
+          "-t": "tag the image",
+          "-f": "specify Dockerfile",
+          "--no-cache": "build without cache"
+        }
+      },
+      "run": {
+        "description": "Create and start a new container",
+        "flags": {
+          "-d": "detached mode",
+          "-p": "port mapping",
+          "-v": "volume mount",
+          "--rm": "auto-remove on exit",
+          "-e": "environment variable",
+          "--name": "container name"
+        }
+      },
+      "ps": {
+        "description": "List running containers",
+        "flags": {
+          "-a": "include stopped"
+        }
+      },
+      "stop": {
+        "description": "Stop running containers"
+      },
+      "start": {
+        "description": "Start stopped containers"
+      },
+      "rm": {
+        "description": "Remove containers",
+        "flags": {
+          "-f": "force remove running container"
+        }
+      },
+      "rmi": {
+        "description": "Remove images",
+        "flags": {
+          "-f": "force"
+        }
+      },
+      "images": {
+        "description": "List local Docker images"
+      },
+      "pull": {
+        "description": "Download an image from a registry"
+      },
+      "push": {
+        "description": "Upload an image to a registry"
+      },
+      "exec": {
+        "description": "Run a command inside a running container"
+      },
+      "logs": {
+        "description": "View container logs",
+        "flags": {
+          "-f": "follow output",
+          "--tail": "number of lines"
+        }
+      },
+      "inspect": {
+        "description": "Show detailed info about a container or image"
+      },
+      "compose": {
+        "description": "Manage multi-container applications"
+      },
+      "system": {
+        "description": "Manage Docker system resources"
+      },
+      "prune": {
+        "description": "Remove unused Docker resources"
+      },
+      "network": {
+        "description": "Manage Docker networks"
+      },
+      "volume": {
+        "description": "Manage Docker volumes"
+      }
+    }
+  },
+  "npm": {
+    "description": "Node.js package manager",
+    "subcommands": {
+      "install": {
+        "description": "Install project dependencies",
+        "flags": {
+          "-g": "globally",
+          "--save-dev": "as dev dependency",
+          "-D": "as dev dependency"
+        }
+      },
+      "uninstall": {
+        "description": "Remove a package"
+      },
+      "run": {
+        "description": "Run a script defined in package.json"
+      },
+      "start": {
+        "description": "Run the start script"
+      },
+      "test": {
+        "description": "Run the test script"
+      },
+      "build": {
+        "description": "Run the build script"
+      },
+      "init": {
+        "description": "Create a new package.json",
+        "flags": {
+          "-y": "accept defaults"
+        }
+      },
+      "publish": {
+        "description": "Publish the package to npm registry"
+      },
+      "outdated": {
+        "description": "Check for outdated dependencies"
+      },
+      "audit": {
+        "description": "Check for security vulnerabilities",
+        "flags": {
+          "--fix": "auto-fix"
+        }
+      },
+      "ls": {
+        "description": "List installed packages"
+      },
+      "ci": {
+        "description": "Clean install from lockfile (for CI)"
+      },
+      "link": {
+        "description": "Symlink a package for local development"
+      },
+      "exec": {
+        "description": "Run a command from a local or remote npm package"
+      }
+    }
+  },
+  "npx": {
+    "description": "Run a command from a local or remote npm package without installing"
+  },
+  "yarn": {
+    "description": "Fast, reliable Node.js package manager",
+    "subcommands": {
+      "add": {
+        "description": "Add a dependency",
+        "flags": {
+          "-D": "as dev dependency"
+        }
+      },
+      "remove": {
+        "description": "Remove a dependency"
+      },
+      "install": {
+        "description": "Install all dependencies"
+      },
+      "run": {
+        "description": "Run a script from package.json"
+      }
+    }
+  },
+  "pnpm": {
+    "description": "Fast, disk-efficient Node.js package manager",
+    "subcommands": {
+      "install": {
+        "description": "Install all dependencies"
+      },
+      "add": {
+        "description": "Add a dependency",
+        "flags": {
+          "-D": "as dev dependency"
+        }
+      },
+      "remove": {
+        "description": "Remove a dependency"
+      },
+      "run": {
+        "description": "Run a script from package.json"
+      }
+    }
+  },
+  "node": {
+    "description": "Run Node.js scripts or start REPL",
+    "flags": {
+      "-e": "evaluate code string"
+    }
+  },
+  "bun": {
+    "description": "Fast JavaScript runtime and package manager"
+  },
+  "deno": {
+    "description": "Secure JavaScript/TypeScript runtime"
+  },
+  "kubectl": {
+    "description": "Kubernetes command-line tool",
+    "subcommands": {
+      "get": {
+        "description": "Display one or many resources",
+        "flags": {
+          "-o": "output format",
+          "-n": "namespace",
+          "-A": "all namespaces"
+        }
+      },
+      "describe": {
+        "description": "Show detailed info about a resource"
+      },
+      "apply": {
+        "description": "Apply a configuration from a file",
+        "flags": {
+          "-f": "filename"
+        }
+      },
+      "delete": {
+        "description": "Delete resources",
+        "flags": {
+          "-f": "from file",
+          "--all": "all of type"
+        }
+      },
+      "create": {
+        "description": "Create a resource from a file or stdin"
+      },
+      "logs": {
+        "description": "Print container logs",
+        "flags": {
+          "-f": "follow",
+          "--tail": "number of lines"
+        }
+      },
+      "exec": {
+        "description": "Execute a command in a container"
+      },
+      "port-forward": {
+        "description": "Forward local ports to a pod"
+      },
+      "scale": {
+        "description": "Change the number of replicas"
+      },
+      "rollout": {
+        "description": "Manage rollouts of a resource"
+      },
+      "top": {
+        "description": "Display resource usage (CPU/memory)"
+      },
+      "drain": {
+        "description": "Drain a node for maintenance"
+      }
+    }
+  },
+  "helm": {
+    "description": "Kubernetes package manager",
+    "subcommands": {
+      "install": {
+        "description": "Install a Helm chart"
+      },
+      "upgrade": {
+        "description": "Upgrade a release"
+      },
+      "uninstall": {
+        "description": "Uninstall a release"
+      },
+      "list": {
+        "description": "List releases"
+      },
+      "repo": {
+        "description": "Manage chart repositories"
+      }
+    }
+  },
+  "terraform": {
+    "description": "Infrastructure as Code tool",
+    "subcommands": {
+      "init": {
+        "description": "Initialize a Terraform working directory"
+      },
+      "plan": {
+        "description": "Preview changes Terraform will make"
+      },
+      "apply": {
+        "description": "Apply the planned infrastructure changes",
+        "flags": {
+          "--auto-approve": "skip confirmation"
+        }
+      },
+      "destroy": {
+        "description": "Destroy all managed infrastructure",
+        "flags": {
+          "--auto-approve": "skip confirmation"
+        }
+      },
+      "fmt": {
+        "description": "Format configuration files"
+      },
+      "validate": {
+        "description": "Validate configuration syntax"
+      },
+      "output": {
+        "description": "Show output values"
+      },
+      "state": {
+        "description": "Manage Terraform state"
+      }
+    }
+  },
+  "aws": {
+    "description": "AWS command-line interface",
+    "subcommands": {
+      "s3": {
+        "description": "Manage S3 buckets and objects"
+      },
+      "ec2": {
+        "description": "Manage EC2 instances"
+      },
+      "iam": {
+        "description": "Manage IAM users, roles, and policies"
+      },
+      "lambda": {
+        "description": "Manage Lambda functions"
+      },
+      "cloudformation": {
+        "description": "Manage CloudFormation stacks"
+      },
+      "sts": {
+        "description": "Security Token Service operations"
+      },
+      "configure": {
+        "description": "Configure AWS CLI credentials and settings"
+      }
+    }
+  },
+  "brew": {
+    "description": "macOS/Linux package manager",
+    "subcommands": {
+      "install": {
+        "description": "Install a package"
+      },
+      "uninstall": {
+        "description": "Remove a package"
+      },
+      "update": {
+        "description": "Update Homebrew and package lists"
+      },
+      "upgrade": {
+        "description": "Upgrade installed packages"
+      },
+      "list": {
+        "description": "List installed packages"
+      },
+      "search": {
+        "description": "Search for packages"
+      },
+      "info": {
+        "description": "Show package info"
+      },
+      "services": {
+        "description": "Manage background services"
+      }
+    }
+  },
+  "pip": {
+    "description": "Python package installer",
+    "subcommands": {
+      "install": {
+        "description": "Install Python packages",
+        "flags": {
+          "-r": "from requirements file",
+          "--upgrade": "upgrade"
+        }
+      },
+      "uninstall": {
+        "description": "Remove Python packages"
+      },
+      "freeze": {
+        "description": "List installed packages in requirements format"
+      },
+      "list": {
+        "description": "List installed packages"
+      }
+    }
+  },
+  "uv": {
+    "description": "Fast Python package installer and resolver"
+  },
+  "uvx": {
+    "description": "Run a Python tool from PyPI without installing"
+  },
+  "python": {
+    "description": "Run Python interpreter or scripts",
+    "flags": {
+      "-m": "run module as script",
+      "-c": "execute code string"
+    }
+  },
+  "python3": {
+    "description": "Run Python 3 interpreter or scripts",
+    "flags": {
+      "-m": "run module as script",
+      "-c": "execute code string"
+    }
+  },
+  "go": {
+    "description": "Go programming language tool",
+    "subcommands": {
+      "build": {
+        "description": "Compile Go packages"
+      },
+      "run": {
+        "description": "Compile and run a Go program"
+      },
+      "test": {
+        "description": "Run Go tests",
+        "flags": {
+          "-v": "verbose",
+          "-run": "run specific tests"
+        }
+      },
+      "get": {
+        "description": "Download and install packages"
+      },
+      "mod": {
+        "description": "Manage Go modules"
+      },
+      "fmt": {
+        "description": "Format Go source code"
+      },
+      "vet": {
+        "description": "Report likely mistakes in Go code"
+      }
+    }
+  },
+  "cargo": {
+    "description": "Rust package manager and build tool",
+    "subcommands": {
+      "build": {
+        "description": "Compile the current package",
+        "flags": {
+          "--release": "optimized build"
+        }
+      },
+      "run": {
+        "description": "Build and run the current package"
+      },
+      "test": {
+        "description": "Run tests"
+      },
+      "new": {
+        "description": "Create a new Cargo package"
+      },
+      "add": {
+        "description": "Add a dependency"
+      },
+      "install": {
+        "description": "Install a Rust binary"
+      }
+    }
+  },
+  "make": {
+    "description": "Build automation tool — run targets from a Makefile"
+  },
+  "gh": {
+    "description": "GitHub CLI",
+    "subcommands": {
+      "pr": {
+        "description": "Manage pull requests"
+      },
+      "issue": {
+        "description": "Manage issues"
+      },
+      "repo": {
+        "description": "Manage repositories"
+      },
+      "auth": {
+        "description": "Manage authentication"
+      },
+      "run": {
+        "description": "View and manage GitHub Actions runs"
+      }
+    }
+  },
+  "systemctl": {
+    "description": "Control systemd services and system state",
+    "subcommands": {
+      "start": {
+        "description": "Start a service"
+      },
+      "stop": {
+        "description": "Stop a service"
+      },
+      "restart": {
+        "description": "Restart a service"
+      },
+      "status": {
+        "description": "Show service status"
+      },
+      "enable": {
+        "description": "Enable service at boot"
+      },
+      "disable": {
+        "description": "Disable service at boot"
+      }
+    }
+  },
+  "journalctl": {
+    "description": "View systemd journal logs",
+    "flags": {
+      "-u": "filter by unit",
+      "-f": "follow"
+    }
+  },
+  "crontab": {
+    "description": "Manage scheduled cron jobs",
+    "flags": {
+      "-e": "edit",
+      "-l": "list"
+    }
+  },
+  "tsc": {
+    "description": "TypeScript compiler — type-check and compile .ts files to JavaScript",
+    "flags": {
+      "--noEmit": "type-check only, no output",
+      "--watch": "recompile on changes",
+      "-p": "project config file"
+    }
+  },
+  "rustc": {
+    "description": "Rust compiler",
+    "flags": {
+      "-o": "output filename",
+      "--edition": "Rust edition"
+    }
+  },
+  "javac": {
+    "description": "Java compiler — compile .java files to bytecode",
+    "flags": {
+      "-d": "output directory",
+      "-cp": "classpath"
+    }
+  },
+  "mvn": {
+    "description": "Apache Maven — Java project build and dependency manager",
+    "subcommands": {
+      "clean": {
+        "description": "Remove build output directory"
+      },
+      "compile": {
+        "description": "Compile source code"
+      },
+      "test": {
+        "description": "Run unit tests"
+      },
+      "package": {
+        "description": "Build distributable package (JAR/WAR)"
+      },
+      "install": {
+        "description": "Install package to local repository"
+      },
+      "deploy": {
+        "description": "Deploy package to remote repository"
+      }
+    }
+  },
+  "gradle": {
+    "description": "Gradle build tool for Java/Kotlin projects",
+    "subcommands": {
+      "build": {
+        "description": "Compile and test the project"
+      },
+      "test": {
+        "description": "Run tests"
+      },
+      "clean": {
+        "description": "Remove build output"
+      },
+      "run": {
+        "description": "Run the application"
+      }
+    }
+  },
+  "webpack": {
+    "description": "JavaScript module bundler",
+    "flags": {
+      "--mode": "build mode (development/production)",
+      "--watch": "rebuild on changes"
+    }
+  },
+  "vite": {
+    "description": "Fast frontend build tool and dev server",
+    "subcommands": {
+      "dev": {
+        "description": "Start development server"
+      },
+      "build": {
+        "description": "Build for production"
+      },
+      "preview": {
+        "description": "Preview production build locally"
+      }
+    }
+  },
+  "esbuild": {
+    "description": "Extremely fast JavaScript/TypeScript bundler",
+    "flags": {
+      "--bundle": "bundle dependencies",
+      "--minify": "minify output",
+      "--outdir": "output directory"
+    }
+  },
+  "eslint": {
+    "description": "JavaScript/TypeScript linter — find and fix code problems",
+    "flags": {
+      "--fix": "auto-fix problems",
+      "--ext": "file extensions"
+    }
+  },
+  "prettier": {
+    "description": "Opinionated code formatter",
+    "flags": {
+      "--write": "format files in place",
+      "--check": "check if files are formatted"
+    }
+  },
+  "biome": {
+    "description": "Fast formatter and linter for JavaScript/TypeScript",
+    "flags": {
+      "--write": "apply fixes"
+    }
+  },
+  "black": {
+    "description": "Python code formatter",
+    "flags": {
+      "--check": "check without modifying",
+      "--diff": "show changes"
+    }
+  },
+  "ruff": {
+    "description": "Fast Python linter and formatter",
+    "flags": {
+      "--fix": "auto-fix problems"
+    }
+  },
+  "clippy": {
+    "description": "Rust linter — catch common mistakes and improve code"
+  },
+  "jest": {
+    "description": "JavaScript testing framework",
+    "flags": {
+      "--watch": "re-run on changes",
+      "--coverage": "collect coverage",
+      "--verbose": "show individual test results",
+      "--run": "single run"
+    }
+  },
+  "vitest": {
+    "description": "Fast Vite-native test runner",
+    "flags": {
+      "--run": "single run (no watch)",
+      "--coverage": "collect coverage",
+      "--reporter": "output format"
+    }
+  },
+  "mocha": {
+    "description": "JavaScript test framework",
+    "flags": {
+      "--recursive": "include subdirectories",
+      "--timeout": "test timeout"
+    }
+  },
+  "pytest": {
+    "description": "Python testing framework",
+    "flags": {
+      "-x": "stop on first failure",
+      "-v": "verbose",
+      "-k": "filter by expression",
+      "--tb": "traceback style"
+    }
+  },
+  "playwright": {
+    "description": "Browser automation and end-to-end testing",
+    "subcommands": {
+      "test": {
+        "description": "Run end-to-end tests"
+      },
+      "codegen": {
+        "description": "Generate test code by recording actions"
+      },
+      "install": {
+        "description": "Install browser binaries"
+      }
+    }
+  },
+  "cypress": {
+    "description": "End-to-end testing framework",
+    "subcommands": {
+      "open": {
+        "description": "Open interactive test runner"
+      },
+      "run": {
+        "description": "Run tests headlessly"
+      }
+    }
+  },
+  "nvm": {
+    "description": "Node.js version manager",
+    "subcommands": {
+      "install": {
+        "description": "Install a Node.js version"
+      },
+      "use": {
+        "description": "Switch to a Node.js version"
+      },
+      "ls": {
+        "description": "List installed versions"
+      }
+    }
+  },
+  "fnm": {
+    "description": "Fast Node.js version manager",
+    "subcommands": {
+      "install": {
+        "description": "Install a Node.js version"
+      },
+      "use": {
+        "description": "Switch to a Node.js version"
+      }
+    }
+  },
+  "pyenv": {
+    "description": "Python version manager",
+    "subcommands": {
+      "install": {
+        "description": "Install a Python version"
+      },
+      "local": {
+        "description": "Set project-level Python version"
+      },
+      "global": {
+        "description": "Set global Python version"
+      }
+    }
+  },
+  "rbenv": {
+    "description": "Ruby version manager",
+    "subcommands": {
+      "install": {
+        "description": "Install a Ruby version"
+      },
+      "local": {
+        "description": "Set project-level Ruby version"
+      }
+    }
+  },
+  "vercel": {
+    "description": "Vercel deployment CLI",
+    "subcommands": {
+      "deploy": {
+        "description": "Deploy to Vercel"
+      },
+      "dev": {
+        "description": "Start local dev server"
+      },
+      "env": {
+        "description": "Manage environment variables"
+      }
+    }
+  },
+  "netlify": {
+    "description": "Netlify deployment CLI",
+    "subcommands": {
+      "deploy": {
+        "description": "Deploy to Netlify"
+      },
+      "dev": {
+        "description": "Start local dev server"
+      },
+      "open": {
+        "description": "Open site in browser"
+      }
+    }
+  },
+  "flyctl": {
+    "description": "Fly.io deployment CLI",
+    "subcommands": {
+      "deploy": {
+        "description": "Deploy application"
+      },
+      "status": {
+        "description": "Show app status"
+      },
+      "logs": {
+        "description": "View app logs"
+      }
+    }
+  },
+  "wrangler": {
+    "description": "Cloudflare Workers/Pages CLI",
+    "subcommands": {
+      "deploy": {
+        "description": "Deploy to Cloudflare"
+      },
+      "dev": {
+        "description": "Start local dev server"
+      },
+      "pages": {
+        "description": "Manage Cloudflare Pages"
+      }
+    }
+  },
+  "railway": {
+    "description": "Railway deployment CLI",
+    "subcommands": {
+      "up": {
+        "description": "Deploy to Railway"
+      },
+      "run": {
+        "description": "Run command with Railway env vars"
+      }
+    }
+  },
+  "az": {
+    "description": "Azure command-line interface",
+    "subcommands": {
+      "login": {
+        "description": "Sign in to Azure"
+      },
+      "group": {
+        "description": "Manage resource groups"
+      },
+      "vm": {
+        "description": "Manage virtual machines"
+      },
+      "webapp": {
+        "description": "Manage web apps"
+      }
+    }
+  },
+  "gcloud": {
+    "description": "Google Cloud CLI",
+    "subcommands": {
+      "auth": {
+        "description": "Manage authentication"
+      },
+      "compute": {
+        "description": "Manage Compute Engine resources"
+      },
+      "run": {
+        "description": "Manage Cloud Run services"
+      },
+      "functions": {
+        "description": "Manage Cloud Functions"
+      }
+    }
+  },
+  "sam": {
+    "description": "AWS Serverless Application Model CLI",
+    "subcommands": {
+      "build": {
+        "description": "Build serverless app"
+      },
+      "deploy": {
+        "description": "Deploy to AWS"
+      },
+      "local": {
+        "description": "Run locally"
+      }
+    }
+  },
+  "cdk": {
+    "description": "AWS Cloud Development Kit CLI",
+    "subcommands": {
+      "deploy": {
+        "description": "Deploy stack to AWS"
+      },
+      "diff": {
+        "description": "Compare deployed stack with local"
+      },
+      "synth": {
+        "description": "Synthesize CloudFormation template"
+      },
+      "destroy": {
+        "description": "Destroy deployed stack"
+      }
+    }
+  },
+  "psql": {
+    "description": "PostgreSQL interactive terminal",
+    "flags": {
+      "-d": "database name",
+      "-U": "username",
+      "-h": "host",
+      "-c": "execute command"
+    }
+  },
+  "mysql": {
+    "description": "MySQL command-line client",
+    "flags": {
+      "-u": "username",
+      "-p": "prompt for password",
+      "-h": "host",
+      "-e": "execute statement"
+    }
+  },
+  "redis": {
+    "description": "Redis command-line interface"
+  },
+  "mongosh": {
+    "description": "MongoDB shell"
+  },
+  "sqlite3": {
+    "description": "SQLite command-line interface"
+  },
+  "command": {
+    "description": "Shell builtin — check if a command exists or run it bypassing aliases",
+    "flags": {
+      "-v": "print command path"
+    }
+  },
+  "test": {
+    "description": "Shell builtin — evaluate conditional expressions"
+  },
+  "nohup": {
+    "description": "Run a command immune to hangups, output to nohup.out"
+  },
+  "timeout": {
+    "description": "Run a command with a time limit"
+  },
+  "watch": {
+    "description": "Execute a command repeatedly and display output",
+    "flags": {
+      "-n": "interval in seconds"
+    }
+  },
+  "yes": {
+    "description": "Output a string repeatedly (default: 'y')"
+  },
+  "tr": {
+    "description": "Translate or delete characters",
+    "flags": {
+      "-d": "delete characters",
+      "-s": "squeeze repeats"
+    }
+  },
+  "cut": {
+    "description": "Remove sections from each line of input",
+    "flags": {
+      "-d": "delimiter",
+      "-f": "fields"
+    }
+  },
+  "paste": {
+    "description": "Merge lines of files side by side"
+  },
+  "column": {
+    "description": "Format input into columns",
+    "flags": {
+      "-t": "table mode"
+    }
+  },
+  "nl": {
+    "description": "Number lines of files"
+  },
+  "rev": {
+    "description": "Reverse lines character by character"
+  },
+  "realpath": {
+    "description": "Print the resolved absolute path"
+  },
+  "readlink": {
+    "description": "Print the target of a symbolic link",
+    "flags": {
+      "-f": "canonicalize"
+    }
+  },
+  "mktemp": {
+    "description": "Create a temporary file or directory",
+    "flags": {
+      "-d": "create directory"
+    }
+  },
+  "stat": {
+    "description": "Display file or filesystem status"
+  },
+  "set": {
+    "description": "Shell builtin — set or unset shell options and positional parameters",
+    "flags": {
+      "-e": "exit on error",
+      "-x": "print commands before execution",
+      "-u": "error on undefined variables",
+      "-o": "set option by name"
+    }
+  },
+  "export": {
+    "description": "Shell builtin — set environment variables for child processes"
+  },
+  "source": {
+    "description": "Shell builtin — execute commands from a file in the current shell"
+  },
+  ".": {
+    "description": "Shell builtin — execute commands from a file in the current shell (same as source)"
+  },
+  "eval": {
+    "description": "Shell builtin — evaluate and execute a string as a shell command"
+  },
+  "exec": {
+    "description": "Shell builtin — replace the current shell process with a command"
+  },
+  "trap": {
+    "description": "Shell builtin — set signal handlers for the shell"
+  },
+  "wait": {
+    "description": "Shell builtin — wait for background processes to finish"
+  },
+  "jobs": {
+    "description": "Shell builtin — list background jobs"
+  },
+  "fg": {
+    "description": "Shell builtin — bring a background job to the foreground"
+  },
+  "bg": {
+    "description": "Shell builtin — resume a suspended job in the background"
+  },
+  "alias": {
+    "description": "Shell builtin — create a shortcut for a command"
+  },
+  "unalias": {
+    "description": "Shell builtin — remove a command alias"
+  },
+  "unset": {
+    "description": "Shell builtin — remove a variable or function"
+  },
+  "read": {
+    "description": "Shell builtin — read a line of input into variables"
+  },
+  "shift": {
+    "description": "Shell builtin — shift positional parameters to the left"
+  },
+  "return": {
+    "description": "Shell builtin — exit from a function with a return value"
+  },
+  "exit": {
+    "description": "Shell builtin — exit the shell with a status code"
+  },
+  "local": {
+    "description": "Shell builtin — declare a variable local to a function"
+  },
+  "declare": {
+    "description": "Shell builtin — declare variables with attributes",
+    "flags": {
+      "-a": "array",
+      "-i": "integer",
+      "-r": "readonly",
+      "-x": "export"
+    }
+  },
+  "readonly": {
+    "description": "Shell builtin — mark variables as read-only"
+  },
+  "true": {
+    "description": "Shell builtin — return true (exit code 0)"
+  },
+  "false": {
+    "description": "Shell builtin — return false (exit code 1)"
+  },
+  "printf": {
+    "description": "Format and print data to stdout"
+  },
+  "sleep": {
+    "description": "Pause execution for a specified duration"
+  },
+  "killall": {
+    "description": "Kill processes by name",
+    "flags": {
+      "-9": "force kill"
+    }
+  },
+  "pkill": {
+    "description": "Kill processes matching a pattern",
+    "flags": {
+      "-f": "match against full command line"
+    }
+  },
+  "pgrep": {
+    "description": "List processes matching a pattern",
+    "flags": {
+      "-f": "match against full command line",
+      "-l": "show process name"
+    }
+  },
+  "nice": {
+    "description": "Run a command with modified scheduling priority"
+  },
+  "strace": {
+    "description": "Trace system calls and signals"
+  },
+  "ltrace": {
+    "description": "Trace library calls"
+  },
+  "time": {
+    "description": "Measure command execution time"
+  },
+  "ulimit": {
+    "description": "Get or set user resource limits",
+    "flags": {
+      "-n": "max open files"
+    }
+  },
+  "dmesg": {
+    "description": "Print kernel ring buffer messages"
+  },
+  "mount": {
+    "description": "Mount a filesystem"
+  },
+  "umount": {
+    "description": "Unmount a filesystem"
+  },
+  "lsblk": {
+    "description": "List block devices (disks and partitions)"
+  },
+  "fdisk": {
+    "description": "Partition table manipulator for Linux"
+  },
+  "ip": {
+    "description": "Show and manipulate network interfaces, routing, and tunnels"
+  },
+  "ss": {
+    "description": "Show socket statistics (modern replacement for netstat)"
+  },
+  "netstat": {
+    "description": "Print network connections, routing tables, and interface statistics"
+  },
+  "traceroute": {
+    "description": "Trace the route packets take to a network host"
+  },
+  "nmap": {
+    "description": "Network exploration and security scanner"
+  },
+  "iptables": {
+    "description": "Configure Linux kernel firewall rules"
+  },
+  "ifconfig": {
+    "description": "Configure or display network interface parameters"
+  },
+  "host": {
+    "description": "DNS lookup utility"
+  },
+  "whois": {
+    "description": "Look up domain registration information"
+  },
+  "ab": {
+    "description": "Apache HTTP server benchmarking tool"
+  },
+  "wrk": {
+    "description": "HTTP benchmarking tool"
+  },
+  "httpie": {
+    "description": "User-friendly HTTP client for the command line"
+  },
+  "podman": {
+    "description": "Daemonless container engine (Docker-compatible)",
+    "subcommands": {
+      "run": {
+        "description": "Create and start a container"
+      },
+      "build": {
+        "description": "Build an image"
+      },
+      "ps": {
+        "description": "List containers"
+      }
+    }
+  },
+  "docker-compose": {
+    "description": "Define and run multi-container Docker applications",
+    "subcommands": {
+      "up": {
+        "description": "Create and start containers"
+      },
+      "down": {
+        "description": "Stop and remove containers"
+      },
+      "build": {
+        "description": "Build images"
+      },
+      "logs": {
+        "description": "View container logs"
+      }
+    }
+  },
+  "minikube": {
+    "description": "Run a local Kubernetes cluster",
+    "subcommands": {
+      "start": {
+        "description": "Start the cluster"
+      },
+      "stop": {
+        "description": "Stop the cluster"
+      },
+      "status": {
+        "description": "Show cluster status"
+      }
+    }
+  },
+  "kind": {
+    "description": "Kubernetes in Docker — run local clusters using Docker containers"
+  },
+  "skaffold": {
+    "description": "Continuous development for Kubernetes applications"
+  },
+  "argocd": {
+    "description": "GitOps continuous delivery tool for Kubernetes"
+  },
+  "ansible": {
+    "description": "IT automation tool for configuration management and deployment",
+    "flags": {
+      "-i": "inventory file",
+      "-m": "module",
+      "-a": "module arguments"
+    }
+  },
+  "ansible-playbook": {
+    "description": "Run Ansible playbooks",
+    "flags": {
+      "-i": "inventory",
+      "--check": "dry run",
+      "-v": "verbose"
+    }
+  },
+  "jenkins": {
+    "description": "Open-source automation server for CI/CD"
+  },
+  "act": {
+    "description": "Run GitHub Actions locally"
+  },
+  "ssh-keygen": {
+    "description": "Generate SSH key pairs",
+    "flags": {
+      "-t": "key type",
+      "-b": "bits",
+      "-f": "output file"
+    }
+  },
+  "ssh-add": {
+    "description": "Add SSH private keys to the authentication agent"
+  },
+  "gpg": {
+    "description": "GNU Privacy Guard — encrypt, decrypt, and sign data",
+    "flags": {
+      "--encrypt": "encrypt",
+      "--decrypt": "decrypt",
+      "--sign": "sign"
+    }
+  },
+  "certbot": {
+    "description": "Obtain and manage Let's Encrypt SSL certificates"
+  },
+  "iconv": {
+    "description": "Convert text between character encodings"
+  },
+  "xxd": {
+    "description": "Create a hex dump or reverse it"
+  },
+  "od": {
+    "description": "Dump files in octal and other formats"
+  },
+  "strings": {
+    "description": "Print printable strings from binary files"
+  },
+  "yq": {
+    "description": "Command-line YAML/XML/TOML processor (like jq for YAML)"
+  },
+  "csvtool": {
+    "description": "Command-line CSV processing tool"
+  },
+  "envsubst": {
+    "description": "Substitute environment variables in text"
+  },
+  "vmstat": {
+    "description": "Report virtual memory statistics"
+  },
+  "iostat": {
+    "description": "Report CPU and I/O statistics"
+  },
+  "sar": {
+    "description": "Collect and report system activity"
+  },
+  "perf": {
+    "description": "Linux performance analysis tool"
+  },
+  "valgrind": {
+    "description": "Memory debugging and profiling tool"
+  },
+  "open": {
+    "description": "Open files, directories, or URLs with the default application",
+    "flags": {
+      "-a": "specify application"
+    }
+  },
+  "pbcopy": {
+    "description": "Copy stdin to the macOS clipboard"
+  },
+  "pbpaste": {
+    "description": "Paste the macOS clipboard to stdout"
+  },
+  "defaults": {
+    "description": "Read and write macOS user defaults (preferences)"
+  },
+  "launchctl": {
+    "description": "Manage macOS system and user services (launchd)"
+  },
+  "sw_vers": {
+    "description": "Print macOS system version information"
+  },
+  "say": {
+    "description": "Convert text to audible speech (macOS)"
+  },
+  "caffeinate": {
+    "description": "Prevent the system from sleeping",
+    "flags": {
+      "-t": "timeout in seconds"
+    }
+  },
+  "diskutil": {
+    "description": "Manage disks and volumes on macOS"
+  },
+  "mdfind": {
+    "description": "Search files using Spotlight metadata"
+  },
+  "mdls": {
+    "description": "List Spotlight metadata attributes for a file"
+  },
+  "xcode-select": {
+    "description": "Manage Xcode developer tools path",
+    "flags": {
+      "--install": "install command line tools"
+    }
+  },
+  "xcrun": {
+    "description": "Run Xcode developer tools"
+  },
+  "codesign": {
+    "description": "Sign code and verify signatures on macOS"
+  },
+  "hdiutil": {
+    "description": "Manipulate disk images on macOS"
+  },
+  "pmset": {
+    "description": "Manage power management settings on macOS"
+  },
+  "sysctl": {
+    "description": "Get or set kernel parameters",
+    "flags": {
+      "-n": "print value only"
+    }
+  },
+  "dscl": {
+    "description": "Directory Service command-line utility (macOS user/group management)"
+  },
+  "networksetup": {
+    "description": "Configure network settings on macOS"
+  },
+  "scutil": {
+    "description": "Manage system configuration parameters on macOS"
+  },
+  "plutil": {
+    "description": "Property list utility — validate and convert plist files"
+  }
+}
